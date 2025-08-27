@@ -5,12 +5,10 @@ Minimal chat script demonstrating AWS Bedrock Nova Lite model using the converse
 
 import boto3
 
-# Configuration constants
-MODEL_NAME = 'Nova'
+MODEL_NAME = 'model'
 MODEL_ID = 'us.amazon.nova-lite-v1:0'
 AWS_REGION = 'us-east-2'
 
-# Inference configuration
 INFERENCE_CONFIG = {
     "maxTokens": 4096,
     "temperature": 0.7,
@@ -18,7 +16,6 @@ INFERENCE_CONFIG = {
 }
 
 def chat_with_nova():
-    # Initialize Bedrock client
     client = boto3.client('bedrock-runtime', region_name=AWS_REGION)
     conversation = []
     
