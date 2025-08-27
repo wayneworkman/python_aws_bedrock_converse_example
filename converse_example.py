@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Minimal chat script demonstrating AWS Bedrock Nova Lite model using the converse api.
+Minimal chat script demonstrating AWS Bedrock Opus 4 model using the converse api.
 """
 
 import boto3
 
 MODEL_NAME = 'model'
-MODEL_ID = 'us.amazon.nova-lite-v1:0'
+MODEL_ID = 'us.anthropic.claude-opus-4-20250514-v1:0'
 AWS_REGION = 'us-east-2'
 
 INFERENCE_CONFIG = {
